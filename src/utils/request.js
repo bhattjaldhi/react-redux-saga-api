@@ -41,7 +41,7 @@ function checkStatus(response) {
  *
  * @return {object}           The response data
  */
-export function request(url, options) {
+export default function request(url, options) {
 
   return fetch(BASE_URL + url, options)
     .then(checkStatus)
